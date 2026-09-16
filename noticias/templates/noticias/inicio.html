@@ -1,9 +1,26 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF Universe | Inicio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Bienvenido a Noticias</h1>
+    <header class="site-header">
+        <a class="brand" href="{% url 'inicio' %}"><span class="brand-mark">◈</span><span class="brand-name">FNAF <span>Universe</span></span></a>
+        <nav class="site-nav" aria-label="Navegación principal">
+            <a href="{% url 'inicio' %}">Inicio</a><a href="{% url 'productos' %}">Personajes</a><a href="{% url 'ofertas' %}">Fangames</a><a href="{% url 'contacto' %}">Comunidad</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <div><p class="eyebrow">Archivo nocturno · Fazbear Entertainment</p><h1>El universo que<br><span>despierta de noche.</span></h1><p class="lead">Explora la historia, los personajes y las creaciones de fans que mantienen viva la leyenda de Five Nights at Freddy's.</p><div class="hero-actions"><a class="btn" href="{% url 'productos' %}">Explorar personajes</a><a class="btn btn-secondary" href="{% url 'ofertas' %}">Ver fangames</a></div></div>
+            <aside class="hero-panel"><p class="panel-label">Registro de seguridad 04</p><div class="signal"><span class="signal-dot"></span><span>Señal estable</span></div><h2>La pizzería sigue en línea.</h2><p>Una colección para fans, curiosos y quienes todavía revisan las cámaras después de medianoche.</p></aside>
+        </section>
+        <section class="section"><div class="section-heading"><div><p class="eyebrow">Dentro del archivo</p><h2>Conoce el universo</h2></div><p>Una mirada limpia y ordenada a la saga y su comunidad.</p></div><div class="card-grid"><article class="card"><div class="card-icon">◉</div><span class="tag">Personajes</span><h3>Habitantes de la noche</h3><p>Conoce a los animatrónicos que convirtieron cada turno en una historia.</p></article><article class="card"><div class="card-icon">✦</div><span class="tag">Fangames</span><h3>Nuevas historias</h3><p>Descubre proyectos de la comunidad que expanden el misterio.</p></article><article class="card"><div class="card-icon">◎</div><span class="tag">Comunidad</span><h3>La señal continúa</h3><p>Noticias, contenido de fans y conversaciones para compartir.</p></article></div></section>
+    </main>
+    <footer class="site-footer">FNAF Universe · Archivo creado por fans · Mantén las luces encendidas.</footer>
 </body>
 </html>

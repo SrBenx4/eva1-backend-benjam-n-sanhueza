@@ -1,9 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF Universe | Comunidad</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-    <h1>Contacto</h1>
+    <header class="site-header"><a class="brand" href="{% url 'inicio' %}"><span class="brand-mark">◈</span><span class="brand-name">FNAF <span>Universe</span></span></a><nav class="site-nav" aria-label="Navegación principal"><a href="{% url 'inicio' %}">Inicio</a><a href="{% url 'productos' %}">Personajes</a><a href="{% url 'ofertas' %}">Fangames</a><a href="{% url 'contacto' %}">Comunidad</a></nav></header>
+    <main class="container"><section class="page-intro"><p class="eyebrow">Comunidad · Canal abierto</p><h1>La historia también la escriben los fans.</h1><p class="lead">Comparte teorías, noticias y contenido inspirado en el universo FNAF.</p></section><section class="section"><article class="card content-card"><span class="tag">Contacto</span><h2>Conecta con el archivo</h2><p>Este espacio reúne a personas que disfrutan descubrir cada detalle de la saga y apoyar nuevas ideas de la comunidad.</p><p class="contact-line">contacto@noticias.cl</p><p>Envíanos tus novedades, recomendaciones o proyectos para mantener la señal activa.</p></article></section></main><footer class="site-footer">FNAF Universe · Archivo creado por fans · Mantén las luces encendidas.</footer>
 </body>
 </html>

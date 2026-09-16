@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF Universe | Fangames</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header"><a class="brand" href="{% url 'inicio' %}"><span class="brand-mark">◈</span><span class="brand-name">FNAF <span>Universe</span></span></a><nav class="site-nav" aria-label="Navegación principal"><a href="{% url 'inicio' %}">Inicio</a><a href="{% url 'productos' %}">Personajes</a><a href="{% url 'ofertas' %}">Fangames</a><a href="{% url 'contacto' %}">Comunidad</a></nav></header>
+    <main class="container"><section class="page-intro"><p class="eyebrow">Fangames · Hecho por la comunidad</p><h1>Historias nuevas. Mismos pasillos.</h1><p class="lead">El talento de los fans mantiene encendida la marquesina cuando el local oficial cierra.</p></section><section class="section"><div class="card-grid"><article class="card"><div class="card-icon">✦</div><span class="tag">Selección de fans</span><h3>Proyectos destacados</h3><p>Explora experiencias que reinterpretan la fórmula con ideas propias.</p></article><article class="card"><div class="card-icon">▣</div><span class="tag">Diseño y código</span><h3>Creadores independientes</h3><p>Conoce el trabajo detrás de nuevos personajes, mecánicas y escenarios.</p></article><article class="card"><div class="card-icon">∞</div><span class="tag">Comunidad</span><h3>Comparte tu proyecto</h3><p>La próxima historia que nos sorprenda puede estar a una idea de distancia.</p></article></div></section></main><footer class="site-footer">FNAF Universe · Archivo creado por fans · Mantén las luces encendidas.</footer>
+</body>
+</html>

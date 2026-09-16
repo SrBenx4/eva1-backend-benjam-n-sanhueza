@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FNAF Universe | Personajes</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header"><a class="brand" href="{% url 'inicio' %}"><span class="brand-mark">◈</span><span class="brand-name">FNAF <span>Universe</span></span></a><nav class="site-nav" aria-label="Navegación principal"><a href="{% url 'inicio' %}">Inicio</a><a href="{% url 'productos' %}">Personajes</a><a href="{% url 'ofertas' %}">Fangames</a><a href="{% url 'contacto' %}">Comunidad</a></nav></header>
+    <main class="container"><section class="page-intro"><p class="eyebrow">Personajes · Fichas de archivo</p><h1>Los rostros detrás de la leyenda.</h1><p class="lead">Una selección de los animatrónicos que hicieron historia en cada local.</p></section><section class="section"><div class="card-grid"><article class="card"><div class="card-icon">◉</div><span class="tag">01 · El anfitrión</span><h3>Freddy Fazbear</h3><p>El rostro de la pizzería. Bajo su sonrisa amable siempre hay una historia por descubrir.</p></article><article class="card"><div class="card-icon">◌</div><span class="tag">02 · La estrella</span><h3>Chica</h3><p>Una presencia inolvidable del escenario, acompañada por su inseparable compañero.</p></article><article class="card"><div class="card-icon">△</div><span class="tag">03 · El corredor</span><h3>Foxy</h3><p>Desde Pirate Cove, espera el momento perfecto para entrar en escena.</p></article></div></section></main><footer class="site-footer">FNAF Universe · Archivo creado por fans · Mantén las luces encendidas.</footer>
+</body>
+</html>
